@@ -31,4 +31,10 @@ public class UsuarioService {
         this.usuarioRepository.save(usuario);
     }
 
+    public Usuario obter(Long id) {
+
+        Optional<Usuario> opcao = this.usuarioRepository.findById(id);
+        return opcao.orElse(new Usuario());
+    }
+
 }

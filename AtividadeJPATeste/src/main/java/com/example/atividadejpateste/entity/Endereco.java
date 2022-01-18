@@ -1,5 +1,6 @@
 package com.example.atividadejpateste.entity;
 
+import com.sun.istack.Nullable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -24,6 +25,7 @@ public class Endereco {
     private String bairro;
     private String cidade;
     private String estado;
+
     @ManyToOne
     private Usuario usuario;
 
